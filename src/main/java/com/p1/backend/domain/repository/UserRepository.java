@@ -1,7 +1,6 @@
 package com.p1.backend.domain.repository;
 
 import com.p1.backend.domain.model.User;
-import com.p1.backend.domain.model.valueobject.Email;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -20,7 +19,7 @@ public interface UserRepository {
     /**
      * Busca un usuario por su email.
      */
-    Optional<User>findByEmail(Email email);
+    Optional<User>findByEmail(String email);
 
     /**
      * Busca un usuario por su username

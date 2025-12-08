@@ -147,7 +147,7 @@ public class User {
     public UserRole getRole(){
         return role;
     }
-    public boolean getVerified(){
+    public boolean isVerified(){
         return verified;
     }
     public UserName getUserName(){
