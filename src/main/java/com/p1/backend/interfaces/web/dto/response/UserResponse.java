@@ -25,6 +25,7 @@ public class UserResponse {
     private String email;
     private String name;
     private String phoneNumber;
+    private String userName;
     private String role;
     private String status;
     private boolean verified;
@@ -40,6 +41,7 @@ public class UserResponse {
             String email,
             String name,
             String phoneNumber,
+            String userName,
             String role,
             String status,
             boolean verified
@@ -48,6 +50,7 @@ public class UserResponse {
         this.email = email;
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.userName = userName;
         this.role = role;
         this.status = status;
         this.verified = verified;
@@ -83,6 +86,14 @@ public class UserResponse {
     }
     public void setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
+    }
+
+    //userName
+    public String getUserName(){
+        return userName;
+    }
+    public void setUserName(String userName){
+        this.userName = userName;
     }
     //role
     public String getRole(){
